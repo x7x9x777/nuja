@@ -1,17 +1,21 @@
+h1{
+  color: #ca1726;
+  color:#e12b1b
+}
+
 .container {
- background-color: aqua;
+ background-color: rgba(20,0,231,255);
   height: auto;
   min-height: 100%;  
   margin: 0 auto;
-  padding: 2rem;
+  padding:  0 2rem;
   text-align: center;
 }
 
 section {
-  height: 100vh;
-  background-image: url(./assets/background.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+ 
+height: 100vh;
+background-color: aliceblue;
+
 }
 

@@ -8,12 +8,13 @@ export default function App() {
 
   return (
     <div className='container'>
-       <Header />
+       
       <main>
         <Hero />
         <About />
         <Projects />
       </main>
+      <Header />
       <Footer />
     </div>
   )
