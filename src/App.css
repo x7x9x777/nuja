@@ -1,21 +1,128 @@
-h1{
+h1 {
   color: #ca1726;
-  color:#e12b1b
+  color: #e12b1b;
+}
+
+
+.hero{
+  background-image: url(./assets/Flower_hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Centers the image within the container */
+}
+.stripe{
+  position: absolute;
+  
+
+}
+.x7{
+  color: rgb(209, 212, 33);
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+
+
+.system{
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  transform: translate(-50%, -50%); /* Perfect centering */
+  border-right: 0.3rem solid rgb(170, 45, 114); /* Add border style */
+  border-bottom: 0.3rem solid rgb(160, 4, 4); /* Add border style */
+
+  width: 30%;
+  padding: 9rem 0;
+  height: auto;
+  background-image: url(./assets/Fallen.gif);
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Centers the image within the container */
+  /* background-color: #e12b1b; */
+  padding: auto;
 }
 
 .container {
- background-color: rgba(20,0,231,255);
+  display: grid;
+  /* display: grid;
+  grid-template-rows: auto 1fr auto; */
+  background-color: rgba(20, 0, 231, 255);
   height: auto;
-  min-height: 100%;  
+  /* min-height: 100%; */
   margin: 0 auto;
-  padding:  0 2rem;
+  padding: 0 0rem;
   text-align: center;
 }
 
 section {
- 
-height: 100vh;
-background-color: aliceblue;
-
+  height: 100vh;
+  width: 100%;
+  background-color: aliceblue;
 }
+
+header {
+  display: flex;
+  align-items: center; /* Vertical alignment */
+  justify-content: center; /* Horizontal alignment */
+
+  position: absolute;
+  top: 30%;
+  left: 85%;
+  transform: translate(-50%, -50%); /* Perfect centering */
+
+  width: 30%;
+  height: auto;
+
+  /* background-color: #e12b1b; */
+  padding: auto;
+}
+
+li{
+  
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 4rem;
+  /* identical to box height */
+  
+  color: #E12B1B;
+}
+
+/* Remove gravity */
+
+.about {
+  background-image: url(./assets/Fallen.gif);
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Centers the image within the container */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: scroll; 
+  
+}
+
+.projects{
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+}
+
+#background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+
+
+
+
+
 
