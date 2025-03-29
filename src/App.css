@@ -5,15 +5,22 @@ h1 {
 
 
 .hero{
-  background-image: url(./assets/Flower_hero.jpg);
-  background-repeat: no-repeat;
-  background-size: cover; /* Ensures the image covers the entire container */
-  background-position: center; /* Centers the image within the container */
+height: 300svh;
+background-color: #e12b1b;
+position: relative;
 }
-.stripe{
-  position: absolute;
+.element{
+  height: 50vh;
+  background-color: aqua;
+  position:sticky;
+  top: 0;
   
 
+}
+
+.bot{
+  height: 100vh;
+  background-color: blueviolet;
 }
 .x7{
   color: rgb(209, 212, 33);

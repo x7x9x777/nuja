@@ -1,19 +1,20 @@
 // import { useState } from 'react'
-import { Header, Hero, About, Projects, Footer } from "./components/root";
+import { Hero} from "./components/root";
 import "./App.css";
 
 
 export default function App() {
   return (
     <div className="container">
-      <Header />
+      {/* <Header /> */}
       <main>
         <Hero />
-        <About />
-        <Projects />
+       <div className="bot"></div>
+        {/* <About /> */}
+        {/* <Projects /> */}
       </main>
-
-      <Footer />
+{/* 
+      <Footer /> */}
    
     </div>
   );

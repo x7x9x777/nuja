@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 import { useEffect, useState } from "react";
 
-export default function TextScramble({ text }: { text: string }) {
+export default function Text1by1({ text }: { text: string }) {
   const string = "abcdefghijklmnop";
   const chars = string.split("");
   const content = text.split("");
@@ -16,34 +16,24 @@ export default function TextScramble({ text }: { text: string }) {
           if (item === " ") {
             return (item = " ");
           }
-          if (index < intervalCount) {
-            return text[index];
+
+          if (intervalCount <= 9) {
+            return (item = chars[Math.floor(Math.random() * chars.length)]);
+          } else {
+            setTimeout(() => {
+              return text[index];
+            }, 1000 * index);
           }
-          return (item = chars[Math.floor(Math.random() * chars.length)]);
         }
       );
       setMytext(newText);
 
       intervalCount += 1;
-      if (intervalCount > content.length) {
-        // setMytext(text)
+      if (intervalCount > 9) {
+        setMytext(text);
         clearInterval(interval);
       }
     }, 30);
-    //  for(let i=0; i<content.length;i++){
-    //     const newcontent=content.split("")
-
-    //    newcontent[i]!==" "?myCallback():  setMytext(newcontent.join(""))
-
-    //   function myCallback(){
-    //     console.log(i)
-    //   newcontent[i]= chars[Math.floor(Math.random() * chars.length )];
-    //   console.log(newcontent.join(""))
-    //   setMytext(newcontent.join(""))
-
-    //   }
-
-    //  }
   }
 
   return (
