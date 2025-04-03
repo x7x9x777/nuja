@@ -4,7 +4,7 @@ h1 {
 }
 
 
-.hero{
+/* .hero{
 height: 300svh;
 background-color: #e12b1b;
 position: relative;
@@ -16,18 +16,9 @@ position: relative;
   top: 0;
   
 
-}
+} */
 
-.bot{
-  height: 100vh;
-  background-color: blueviolet;
-}
-.x7{
-  color: rgb(209, 212, 33);
-  font-weight: 500;
-  font-size: 2rem;
-  line-height: 2.5rem;
-}
+
 
 
 
@@ -50,10 +41,11 @@ position: relative;
 }
 
 .container {
-  display: grid;
+  display: flex;
+
   /* display: grid;
   grid-template-rows: auto 1fr auto; */
-  background-color: rgba(20, 0, 231, 255);
+  background-color: rgb(167, 65, 65);
   height: auto;
   /* min-height: 100%; */
   margin: 0 auto;
@@ -61,28 +53,17 @@ position: relative;
   text-align: center;
 }
 
-section {
+
+
+
+
+/* section {
   height: 100vh;
   width: 100%;
   background-color: aliceblue;
-}
+} */
 
-header {
-  display: flex;
-  align-items: center; /* Vertical alignment */
-  justify-content: center; /* Horizontal alignment */
 
-  position: absolute;
-  top: 30%;
-  left: 85%;
-  transform: translate(-50%, -50%); /* Perfect centering */
-
-  width: 30%;
-  height: auto;
-
-  /* background-color: #e12b1b; */
-  padding: auto;
-}
 
 li{
   

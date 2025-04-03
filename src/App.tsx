@@ -1,21 +1,19 @@
 // import { useState } from 'react'
-import { Hero} from "./components/root";
+import { Hero, About} from "./components/root";
 import "./App.css";
+import MainLayout from "./layouts/MainLayout";
 
 
 export default function App() {
   return (
     <div className="container">
-      {/* <Header /> */}
-      <main>
-        <Hero />
-       <div className="bot"></div>
-        {/* <About /> */}
-        {/* <Projects /> */}
-      </main>
-{/* 
-      <Footer /> */}
-   
+    
+      <MainLayout>
+        <Hero/>
+        <About/>
+      </MainLayout>
+  
+
     </div>
   );
 }
